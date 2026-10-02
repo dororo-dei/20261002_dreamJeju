@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Isometra&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Isometra&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -26,15 +26,21 @@ header {
 /* 상단 로고 */
 /* header > a{} */
 .logo {
+    display: flex;
     font-family: "Isometra", serif;
-  width: 200px;
-  font-size: 24px;
-  font-weight: bold;
-  color: #fff;
-  text-align: center;
-  line-height: 100px; /* header와 같은 사이즈로 라이헤이트하면 글자높이가 같아져 중앙정렬됨 */
-  background-color: black;
-  /* display: block; header를 flex하면 a태그라 인라인인 .logo에 block할 필요가 없다 */
+    width: fit-content;
+    height: 100%;
+    padding: 0 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    /* line-height: 100px; */
+    background-color: black;
+    align-items: center;
+}
+.logo img {
+  width: 50px;
 }
 .logo:hover {
   background-color: rgb(135, 122, 221);
