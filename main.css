@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Isometra&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+/* 전체레이아웃 */
+.wrap {
+  width: 1200px;
+  background-color: antiquewhite;
+  margin: 0 auto;
+}
+/* 상단 */
+header {
+  width: 100%; /* 너비 써도되고 안써도 된다 */
+  height: 100px;
+  background-color: aqua;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+/* 상단 로고 */
+/* header > a{} */
+.logo {
+    font-family: "Isometra", serif;
+  width: 200px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  line-height: 100px; /* header와 같은 사이즈로 라이헤이트하면 글자높이가 같아져 중앙정렬됨 */
+  background-color: black;
+  /* display: block; header를 flex하면 a태그라 인라인인 .logo에 block할 필요가 없다 */
+}
+.logo:hover {
+  background-color: rgb(135, 122, 221);
+  color: rgb(31, 24, 77);
+  transition: 0.2s;
+}
+/* 메뉴 */
+header nav {
+  width: 600px;
+  height: 50px;
+  background-color: rgb(255, 213, 255);
+  display: flex;
+  align-items: center;
+}
+header nav a {
+  width: calc(100% / 4);
+  text-align: center;
+  line-height: 50px;
+  background-color: black;
+  color: #fff;
+}
+header nav a:hover {
+  background-color: rgb(135, 122, 221);
+  color: rgb(31, 24, 77);
+}
+/* 메인 */
+main {
+  padding: 30px;
+  background-color: slateblue;
+}
+h2 {
+  margin-bottom: 20px;
+}
+section {
+  margin-bottom: 40px;
+}
+/* 전체설명 */
+.description {
+  display: flex;
+  gap: 30px;
+}
+/* 이미지 */
+.desc-img {
+  width: 500px;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: red;
+}
+.desc-img img {
+  width: 100%;
+  display: block;
+  transition: all 0.3s;
+}
+.desc-img img:hover {
+  transform: scale(1.1);
+}
+/* 자세한 설명 */
+.desc-detail {
+  width: 500px;
+  /* background-color: rgb(132, 121, 204); */
+}
+/* 자세한 설명 상단 */
+.detail-top {
+  margin-bottom: 20px;
+}
+.description h3,
+.description h4 {
+  margin-bottom: 10px;
+}
+/* 하단 */
+footer {
+  background-color: #333;
+  padding: 30px;
+  color: #fff;
+  margin: auto;
+}
+footer a {
+  color: #fff;
+  margin: 0 20px;
+}
